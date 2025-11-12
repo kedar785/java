@@ -1,6 +1,6 @@
-package lec1.com;
+package lecture.com;
 import java.util.Scanner;
-class hello {
+class lec1 {
 public static void main(String[] args) {
     // 5
     // 55

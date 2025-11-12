@@ -1,4 +1,4 @@
-package lec1.com;
+package lecture.com;
 
 class car{
     static String name="hello";

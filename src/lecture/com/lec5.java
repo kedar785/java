@@ -1,4 +1,4 @@
-package lec1.com;
+package lecture.com;
 
 public class lec5 {
     public static void main(String[] args){

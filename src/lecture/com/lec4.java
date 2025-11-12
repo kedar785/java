@@ -1,4 +1,4 @@
-package lec1.com;
+package lecture.com;
 
 import java.util.Arrays;
 public class lec4 {

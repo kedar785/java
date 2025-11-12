@@ -1,4 +1,4 @@
-package lec1.com;
+package lecture.com;
 import java.util.Scanner;
 public class lec2 {
     public static void main(String[] args) {
