@@ -1,22 +1,22 @@
 package lecture.com;
-//class Employee{
-//    void work(){
-//        System.out.println("project work");
-//
-//    }
-//}
-//class Manager extends Employee{
-//    void meeting(){
-//      System.out.println("Attending meeting");
-//    }
-//}
-//public class lec9 {
-//    public static void main(String[] args){
-//Manager s1=new Manager();
-//s1.work();
-//s1.meeting();
-//    }
-//}
+class Employee{
+    void work(){
+        System.out.println("project work");
+
+    }
+}
+class Manager extends Employee{
+    void meeting(){
+      System.out.println("Attending meeting");
+    }
+}
+public class lec9 {
+    public static void main(String[] args){
+Manager s1=new Manager();
+s1.work();
+s1.meeting();
+    }
+}
 
 //class person{
 //    void displayName(){
@@ -123,20 +123,29 @@ package lecture.com;
 //}
 
 //over Riding
-class Animal{
-    void eat(){
-        System.out.println("pizza");
-    }
-}
-class Dog extends Animal{
-    void eat(){
-        System.out.println("roti");
-    }
-}
-public class lec9 {
-    public static void main(String[] args) {
-
-        Animal A = new Animal();
-        A.eat();
-    }
-}
+//class Animal{
+//    void eat(){
+//        System.out.println("pizza");
+//    }
+//    void data(){
+//        System.out.println("hii");
+//    }
+//}
+//class Dog extends Animal{
+//    void eat(){
+//        System.out.println("roti");
+//    }
+//    void sleep(){
+//        System.out.println("hello ");
+//    }
+//}
+//
+//public class lec9 {
+//    public static void main(String[] args) {
+//
+//        Animal s1 = new Animal();
+//        s1.eat();
+//        Dog s2=(Dog)s1;
+//        s2.sleep();
+//    }
+//}
