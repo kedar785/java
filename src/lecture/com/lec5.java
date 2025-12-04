@@ -13,8 +13,8 @@ public class lec5 {
 //        System.out.println("reverse:"+str);
 //     str.length();
 //        System.out.println("length():"+str);
-//String str="i love java";
-//String a[]=str.split(" ");
+//          String str="i love java";
+//          String a[]=str.split(" ");
 //       StringBuilder result=new StringBuilder();
 //       for(String i:a){
 //           StringBuilder data=new StringBuilder(i);
