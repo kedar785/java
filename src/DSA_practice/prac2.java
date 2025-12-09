@@ -97,27 +97,53 @@ import java.util.*;
 //}
 
   //constructor  :
-  public class prac2 {
-      public static class Car{
-          int seats;
-          String name;
-          double length;
-          Car(int x,String s,double d){
-              seats =x;
-              name=s;
-              length=d;
+//  public class prac2 {
+//      public static class Car{
+//          int seats;
+//          String name;
+//          double length;
+//          Car(int x,String s,double d){
+//              seats =x;
+//              name=s;
+//              length=d;
+//
+//          }
+//          void print(){
+//              System.out.println(seats+" "+name+" "+length);
+//          }
+//      }
+//
+//      public static void main(String[] args) {
+//          Car c1=new Car (5,"kia sonet",3.99);
+//          c1.print();
+//          Car c2=new Car(4,"lord alto",3.56);
+//          c2.print();
+//
+//      }
+//  }
 
-          }
-          void print(){
-              System.out.println(seats+" "+name+" "+length);
-          }
-      }
+public class prac2 {
+    private static class pokemon{
+        int hp;
+        int  speed;
+        int attack;
+        int defense;
+        String type;
+        String name;
+    }
 
-      public static void main(String[] args) {
-          Car c1=new Car (5,"kia sonet",3.99);
-          c1.print();
-          Car c2=new Car(4,"lord alto",3.56);
-          c2.print();
+    public static void main(String[] args) {
+        pokemon p1=new pokemon();
+        p1.name="pokemon";
+        p1.type="Electric";
+        p1.attack=70;
+        pokemon p2=new pokemon();
+        p2.name="charizard";
+        p2.type="fire";
+        p2.attack=110;
+        pokemon p3=new pokemon();
+        p3.type="water";
+        System.out.println(p1.type);
+    }
 
-      }
-  }
+}
