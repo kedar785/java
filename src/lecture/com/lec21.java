@@ -16,9 +16,9 @@ public class lec21 {
         List<Integer> skip= list.stream().skip(2).toList();
         List<Integer>  limit= list.stream().limit(2).toList();
         List<Integer> sort= list.stream().sorted((a,b)->a-b).toList();
-//        System.out.println(res);
-//        System.out.println(mapData);
-//        System.out.println(data);
+        System.out.println(res);
+        System.out.println(mapData);
+        System.out.println(data);
         System.out.println(skip);
         System.out.println(limit);
         System.out.println(sort);
