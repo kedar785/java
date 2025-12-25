@@ -1,6 +1,6 @@
 package Array;
 
-public class misssingArr {
+public class missingArr {
     public static void main(String[] args) {
         int []arr={1,2,4,5,6,7};
         int n=arr.length+1;
