@@ -1,10 +1,7 @@
 package TowD_Array;
 
 public class spirally_traversingMatrix {
-
-
-
-            public static void spiralPrint(int[][] matrix) {
+    public static void spiralPrint(int[][] matrix) {
                 int top = 0;
                 int bottom = matrix.length - 1;
                 int left = 0;
