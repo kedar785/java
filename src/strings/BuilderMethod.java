@@ -14,7 +14,8 @@ public class BuilderMethod {
 //        System.out.println(x.startsWith("ha"));
 //        System.out.println(x.endsWith("ita"));
         String a="harmeet";
-        String b="harneet";
+        String b="neet";
+        System.out.println(a.concat(b));
         System.out.println(a.compareTo(b));
     }
 }
