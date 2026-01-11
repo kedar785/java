@@ -13,7 +13,8 @@ public class first_ocurence {
                 else if (nums[mid] < target) lo = mid + 1;
                 else{
                     idx=mid;
-                    hi=mid-1;
+                    hi=mid-1;//first ocurence ke liye hi=mid-1;
+                    //last ocurence ke liye lo=mid+;
                 }
             }
             return -1;
