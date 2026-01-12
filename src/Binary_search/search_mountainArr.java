@@ -14,7 +14,7 @@ public class search_mountainArr {
         return 23;
     }
     public static void main(String[] args) {
-        //peak :- sabse large element hai.
+        //peak :- sabse large element hai.means - vo apne left and right element se large hai
 int [] arr={1,3,5,78,33,2,4};
 int result=peak(arr);
         System.out.println("peak element: "+result);
