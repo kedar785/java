@@ -8,11 +8,11 @@ public class sum_digit {
         Scanner sc=new Scanner(System.in);
         int digit=sc.nextInt();
 
-        int count=0;
+        int sum=0;
         while( digit >0){
-            count+=digit%10;
+            sum+=digit%10;
           digit=digit/10;
         }
-        System.out.println("count digit : "+count);
+        System.out.println("count digit : "+sum);
     }
 }
