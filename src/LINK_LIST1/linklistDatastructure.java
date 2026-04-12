@@ -51,6 +51,37 @@ class LinkList {
         }
 
     }
+    void insert(int val, int idx){
+        if(idx<0 || idx>size) System.out.println("invalid index");
+        else if(idx==0) addAtHead(val);
+        else if(idx==size) addAtTail(val);
+
+        else{
+            Node temp=head;
+            for(int i=1;i<=idx-1;i++ ){
+                temp=temp.next;
+            }
+            Node t=new Node(val);
+            t.next=temp.next;
+            temp.next=t;
+            size++;
+
+        }
+    }
+    void delete(int idx){
+        if(idx<0 || idx>size) System.out.println("invalid index");
+        if(idx==0){
+            deleteAtHead(70);
+            return;
+        }
+        Node temp=head;
+        for(int i=1;i<=idx-1;i++){
+            temp=temp.next;
+        }
+        temp.next=temp.next.next; //delete
+        if(idx== size-1) tail=temp; //we are deleting tail
+        size--;
+    }
 }
 public class linklistDatastructure {
     public static void main(String[] args) {
@@ -61,6 +92,8 @@ public class linklistDatastructure {
         ll.addAtHead(70);
         ll.addAtHead(80);
         ll.deleteAtHead(80);
+        ll.insert(25,3);
+        ll.delete(2);
 
         ll.display();
         System.out.println( "   size of link list : "+ ll.size);
