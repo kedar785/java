@@ -24,13 +24,25 @@ public class Implement {
         a.left=b; a.right=c;
         b.left=d; b.right=e;
         c.left=f; c.right=g;
-        display(a);
+//        display(a);
+//        System.out.println();
+//        System.out.println("Levels of tree : "+Levels(a));
+//        System.out.println( "size of tree : "+size(a));
+//        System.out.println("sum of tree : "+sum(a));
+//        System.out.println("max of tree: "+max(a));
+//        System.out.println("min of tree  :"+min(a));
+        preorder(a);
         System.out.println();
-        System.out.println( "size of tree : "+size(a));
-        System.out.println("sum of tree : "+sum(a));
-        System.out.println("max of tree: "+max(a));
-        System.out.println("min of tree  :"+min(a));
+        inorder(a);
+        System.out.println();
+        postorder(a);
 
+
+
+    }
+    private static int Levels(Node root){
+        if(root==null) return 0;
+        return 1+Math.max(Levels(root.left),Levels(root.right));
     }
     private static int max(Node root){
         if(root==null) return Integer.MIN_VALUE;
@@ -53,5 +65,26 @@ public class Implement {
         System.out.print(root.val+" ");
         display(root.left);
         display(root.right);
+    }
+
+    private static void preorder(Node root){
+        if(root==null) return;
+        System.out.print(root.val+" ");
+        preorder(root.left);
+        preorder(root.right);
+    }
+    private static void inorder(Node root){
+        if(root==null) return;
+
+        inorder(root.left);
+        System.out.print(root.val+" ");
+        inorder(root.right);
+    }
+    private static void postorder(Node root){
+        if(root==null) return;
+
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.val+" ");
     }
 }
