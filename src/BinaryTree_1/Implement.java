@@ -1,4 +1,5 @@
 package BinaryTree_1;
+import java.util.*;
  class Node{
      int val;
      Node left;
@@ -7,6 +8,7 @@ package BinaryTree_1;
          this.val=val;
      }
  }
+
 public class Implement {
     public static void main(String[] args) {
         //                       3
@@ -14,16 +16,20 @@ public class Implement {
         //                  4         2
         //                 /   \     /  \
         //               -1    1   6    9
-        Node    a =new Node(3);
-        Node    b =new Node(4);
-        Node     c =new Node(2);
-        Node   d  =new Node(-1);
-        Node   e  =new Node(1);
-        Node   f  =new Node(6);
-        Node   g  =new Node(9);
-        a.left=b; a.right=c;
-        b.left=d; b.right=e;
-        c.left=f; c.right=g;
+        Node a = new Node(3);
+        Node b = new Node(4);
+        Node c = new Node(2);
+        Node d = new Node(-1);
+        Node e = new Node(1);
+        Node f = new Node(6);
+        Node g = new Node(9);
+        a.left = b;
+        a.right = c;
+        b.left = d;
+        b.right = e;
+        c.left = f;
+        c.right = g;
+
 //        display(a);
 //        System.out.println();
 //        System.out.println("Levels of tree : "+Levels(a));
@@ -31,14 +37,33 @@ public class Implement {
 //        System.out.println("sum of tree : "+sum(a));
 //        System.out.println("max of tree: "+max(a));
 //        System.out.println("min of tree  :"+min(a));
-        preorder(a);
+//        preorder(a);
+//        System.out.println();
+//        inorder(a);
+//        System.out.println();
+//        postorder(a);
+
+     // levelOrder(a);
+        KthLevel(a,0,0);
+
+
+    }
+    private static void levelOrder(Node root){
+        Queue<Node> q=new LinkedList<>();
+        q.add(root);
+        while(q.size()>0){
+            Node front=q.remove();
+            System.out.print(front.val+" ");
+            if(front.left!=null) q.add(front.left);
+            if(front.right!=null) q.add(front.right);
+        }
         System.out.println();
-        inorder(a);
-        System.out.println();
-        postorder(a);
-
-
-
+    }
+    private static void KthLevel(Node root ,int level,int k){
+        if(root==null) return;
+        if(level==k) System.out.println(root.val+" ");
+        KthLevel(root.left,level+1,k);
+        KthLevel(root.right,level+1,k);
     }
     private static int Levels(Node root){
         if(root==null) return 0;
