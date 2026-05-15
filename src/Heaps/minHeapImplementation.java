@@ -9,6 +9,7 @@ public class minHeapImplementation {
         Heap(int capacity) {
             arr = new int[capacity + 1];
             Arrays.fill(arr, Integer.MAX_VALUE);
+
         }
 
         int peek() {
