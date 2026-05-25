@@ -1,9 +1,6 @@
 package BitManupulation;
 
 public class scoreAfterFlippingMatrix {
-
-
-
         public int matrixScore(int[][] arr) {
             int m = arr.length, n = arr[0].length;
             // 0th col of matrix should have all ones
