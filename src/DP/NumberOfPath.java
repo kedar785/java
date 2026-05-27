@@ -2,6 +2,8 @@ package DP;
 
 public class NumberOfPath {
     public int numberOfPath(int m,int n){
+
+
         int [][] dp=new int[m][n];
         for(int i=0;i<m;i++){
             for(int j=0;j<n;j++){
@@ -11,6 +13,7 @@ public class NumberOfPath {
 
         }
         return dp[m-1][n-1];
+        //-----------------------------------------------
 //        int [][] dp=new int[m+1][n+1];
 //        return paths(m,n,dp);
     }
