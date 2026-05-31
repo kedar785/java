@@ -1,4 +1,4 @@
-package binarySearch;
+package DP;
 
 public class knapsack {
 

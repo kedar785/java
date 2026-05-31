@@ -1,4 +1,4 @@
-package binarySearch;
+package DP;
 
 public class edit_distance {
     public int editDistance(String s1, String s2) {
