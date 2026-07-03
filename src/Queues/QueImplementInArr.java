@@ -57,7 +57,7 @@ class circularQueue{
 }
 public class QueImplementInArr {
     public static void main(String[] args) {
-        circularQueue q= new circularQueue(5);
+        designcircularQueue q= new designcircularQueue(5);
         q.add(10);
         q.add(20);
         q.add(30);
